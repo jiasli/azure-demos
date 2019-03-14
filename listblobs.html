@@ -97,9 +97,10 @@
             console.log(container);
 
             var x = xmlDoc.getElementsByTagName("Blob");
+            var sas = $("#sas").val();
 
             for (i = 0; i < x.length; i++) {
-                table += "<tr class=\"table-row\" data-href=\"" + endpoint + container + "/" + x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + "\"><td>" +
+                table += "<tr class=\"table-row\" data-href=\"" + endpoint + container + "/" + x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue + sas + "\"><td>" +
                     x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue +
                     "</td><td>" +
                     x[i].getElementsByTagName("Last-Modified")[0].childNodes[0].nodeValue +
