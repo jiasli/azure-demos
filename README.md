@@ -2,4 +2,4 @@
 
 Demos for integrating with Azure. 
 
-[List Blobs](listblobs)
+[List Blobs](listblobs.html)
